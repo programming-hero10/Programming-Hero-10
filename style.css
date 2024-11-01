@@ -225,7 +225,7 @@ nav {
     }
   }
 }
-@media screen and (min-width: 1000px) and (max-width: 1400px) {
+@media screen and (min-width: 1000px) and (max-width: 1600px) {
   header {
     background: url("images/respnsive-bg.png");
     background-position: center;
@@ -233,5 +233,7 @@ nav {
     height: 170vh;
   }
   .hero-container {
+    flex-direction: column;
+    gap: 250px;
   }
 }
