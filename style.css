@@ -1,0 +1,106 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("images/Polash\ some\ coding\ banner.png");
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 100px;
+  font-family: "Poppins", sans-serif;
+  & ul {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    & a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 20px;
+      border: 2px solid transparent;
+      transition: 0.5s ease;
+      padding: 2px 5px;
+      font-weight: bold;
+      &:hover {
+        border-bottom: 2px solid #ff0095;
+      }
+    }
+  }
+  & .logo img {
+    width: 100px;
+    border-radius: 50%;
+  }
+}
+.hero-container {
+  display: flex;
+  color: #fff;
+  align-items: center;
+  gap: 700px;
+  padding: 50px 120px;
+  & h3 {
+    font-size: 30px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+    margin-bottom: 20px;
+  }
+  & h1 {
+    font-size: 55px;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    line-height: 60px;
+    margin-bottom: 20px;
+  }
+  & p {
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    line-height: 30px;
+    margin-bottom: 50px;
+  }
+  & a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  & .btn1{
+    border: 2px solid #ff0095;
+    padding: 15px 20px;
+    border-radius: 20px;
+    margin-right: 20px;
+    font-family: "Roboto", sans-serif;
+    transition: 0.5s ease;
+    & i{
+        margin-right: 10px;
+    }
+    &:hover{
+      background-color: #ff0095;
+      color: #fff;
+    }
+  }
+  & .btn2{
+    border: 2px solid #ff0095;
+    background: #ff0095;
+    padding: 15px 20px;
+    font-family: "Poppins", sans-serif;
+    border-radius: 20px;
+    transition: 0.5s ease;
+    & i{
+        margin-right: 10px;
+    }
+    &:hover{
+        background: transparent;
+    }
+  }
+}
