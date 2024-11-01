@@ -24,6 +24,7 @@ nav {
   & ul {
     display: flex;
     align-items: center;
+    list-style: none;
     gap: 50px;
     & a {
       text-decoration: none;
@@ -69,38 +70,168 @@ nav {
     line-height: 30px;
     margin-bottom: 50px;
   }
-  & a{
+  & a {
     color: #fff;
     text-decoration: none;
     font-size: 20px;
   }
-  & .btn1{
-    border: 2px solid #ff0095;
-    padding: 15px 20px;
-    border-radius: 20px;
-    margin-right: 20px;
-    font-family: "Roboto", sans-serif;
-    transition: 0.5s ease;
-    & i{
-        margin-right: 10px;
+}
+.btn1 {
+  border: 2px solid #ff0095;
+  padding: 15px 20px;
+  border-radius: 20px;
+  margin-right: 20px;
+  font-family: "Roboto", sans-serif;
+  transition: 0.5s ease;
+  & i {
+    margin-right: 10px;
+  }
+  &:hover {
+    background-color: #ff0095;
+    color: #fff;
+  }
+}
+.btn2 {
+  border: 2px solid #ff0095;
+  background: #ff0095;
+  padding: 15px 20px;
+  font-family: "Poppins", sans-serif;
+  border-radius: 20px;
+  transition: 0.5s ease;
+  & i {
+    margin-right: 10px;
+  }
+  &:hover {
+    background: transparent;
+  }
+}
+@media screen and (max-width: 766px) {
+  header {
+    background: url("images/respnsive-bg.png");
+    background-size: cover;
+    background-position: center;
+    height: 850px;
+  }
+  nav {
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+    & .logo img {
+      width: 50px;
     }
-    &:hover{
-      background-color: #ff0095;
-      color: #fff;
+    & ul {
+      gap: 5px;
+      & a {
+        font-size: 16px;
+        font-weight: normal;
+        font-family: "Roboto", sans-serif;
+      }
     }
   }
-  & .btn2{
-    border: 2px solid #ff0095;
-    background: #ff0095;
-    padding: 15px 20px;
-    font-family: "Poppins", sans-serif;
-    border-radius: 20px;
-    transition: 0.5s ease;
-    & i{
-        margin-right: 10px;
+  .hero-container {
+    flex-direction: column;
+    gap: 50px;
+    padding: 20px;
+    & h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
     }
-    &:hover{
-        background: transparent;
+    & h3 {
+      font-size: 30px;
+      margin-bottom: 10px;
     }
+    & p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    & .img img {
+      width: 100%;
+    }
+    & a {
+      font-size: 16px;
+    }
+  }
+  .btn1 {
+    padding: 10px 15px;
+  }
+  .btn2 {
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 988px) {
+  header {
+    background: url("images/respnsive-bg.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+  }
+
+  nav {
+    gap: 50px;
+    padding: 20px;
+    & .logo img {
+      width: 70px;
+    }
+    & ul {
+      gap: 15px;
+      & a {
+        font-weight: normal;
+        font-size: 18px;
+      }
+    }
+  }
+  .hero-container {
+    flex-direction: column;
+    padding: 20px;
+    gap: 50px;
+    & .img img {
+      width: 70%;
+    }
+  }
+  .btn1 {
+    padding: 10px 15px;
+    font-size: 18px;
+  }
+  .btn2 {
+    padding: 10px 15px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 989px) and (max-width: 1200px) {
+  header {
+    height: 125vh;
+  }
+  nav {
+    padding: 20px;
+    & .logo img {
+      width: 90px;
+    }
+    & ul {
+      gap: 20px;
+      & a {
+        font-size: 18px;
+        font-size: 600;
+      }
+    }
+  }
+  .hero-container {
+    flex-direction: column;
+    padding: 20px;
+    gap: 90px;
+    & .img img {
+      width: 90%;
+    }
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1400px) {
+  header {
+    background: url("images/respnsive-bg.png");
+    background-position: center;
+    background-size: contain;
+    height: 170vh;
+  }
+  .hero-container {
   }
 }
