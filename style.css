@@ -254,6 +254,7 @@ nav {
       position: absolute;
       margin-left: -80px;
       background: #ff0095bb;
+      cursor: pointer;
     }
   }
 }
