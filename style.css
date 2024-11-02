@@ -30,6 +30,12 @@ nav {
     align-items: center;
     list-style: none;
     gap: 50px;
+    & li {
+      transition: 0.5s ease;
+      &:hover {
+        transform: rotate(15deg);
+      }
+    }
     & a {
       text-decoration: none;
       color: #fff;
@@ -279,6 +285,9 @@ nav {
       & i {
         margin-right: 15px;
       }
+      .fa-youtube{
+        color: #ff0000;
+      }
       & .fa-facebook {
         color: rgb(27, 27, 255);
       }
@@ -419,7 +428,7 @@ footer {
         margin: 0;
         background: #190055;
         color: #fff;
-        margin-left: -20px;
+        margin-left: -90px;
       }
     }
   }
